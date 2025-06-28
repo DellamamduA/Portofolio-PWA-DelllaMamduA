@@ -1,0 +1,58 @@
+
+.jumbotron {
+  padding-top: 6rem; /*jarak atas (padding-top) sebesar 6rem (sekitar 96px)*/
+  background-color: #e2edff; /*latar belakang berwarna biru muda*/
+}
+
+/* jika terjadi perubahan pada properti transform atau color, maka perubahan
+ tersebut akan berlangsung secara halus selama 0.3 detik (300 milidetik), bukan langsung seketika. */
+.social-icon {
+  transition: transform 0.3s, color 0.3s;
+}
+
+/*  ketika kursor diarahkan, ikon akan membesar dan berubah menjadi warna biru, 
+menciptakan pengalaman pengguna yang lebih dinamis dan profesional. */
+.social-icon:hover {
+  transform: scale(1.3); /* ikon Membesar */
+  color: #0d6efd; /* Warna biru Bootstrap saat hover */
+}
+
+#skills {
+  background-color: #e2edff; 
+}
+
+.card-body {
+  /* Memberikan efek animasi halus saat elemen mengalami perubahan transformasi (seperti scale, rotate, dll) atau warna latar belakang (background-color)
+   0.3s artinya transisi berlangsung selama 0.3 detik, ease adalah jenis kurva kecepatan yang dimulai lambat, menjadi cepat,
+    lalu melambat lagi — membuat animasi terlihat lebih natural.*/
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  /* Memberi garis bawah pada elemen dengan ketebalan 2 piksel, gaya solid, dan warna abu-abu terang */
+  border-bottom: 2px solid #ddd;
+  padding: 20px; /* Memberi ruang dalam (padding) sebesar 20 piksel di seluruh sisi isi dalam elemen .card-body.*/
+  border-radius: 10px; /*Membuat sudut elemen menjadi membulat dengan radius 10 piksel.*/
+}
+
+/* Efek hover atau klik */
+.card-body:hover {
+  background-color: #bfdbfe; /* Warna hover lebih lembut */
+  transform: scale(1.05); /* Membesar saat disentuh */
+}
+
+/* Judul dengan garis bawah penuh */
+.card-title {
+  font-weight: bold; /*Mengatur teks elemen .card-title menjadi tebal.*/
+  font-size: 1.2rem; /*Ukuran huruf diatur menjadi 1.2 rem (relatif terhadap ukuran font root, biasanya 16px).*/
+  text-decoration: underline; /*Menambahkan garis bawah pada teks.*/
+  text-underline-offset: 4px; /* supaya jaraknya agak jauh dari huruf */
+}
+
+/* memberikan interaktivitas visual saat elemen ditekan, membuat UX terasa lebih responsif. */
+.card-body:active {
+  transform: scale(0.98);
+  background-color: #e6f0ff;
+}
+  
+/* mengatur jarak antar bagian halaman, agar layout lebih terstruktur dan rapi. */
+section {
+  padding-top: 5rem;
+}

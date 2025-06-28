@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Menyatakan bahwa dokumen ini menggunakan HTML5 -->
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Mengatur agar halaman tampil responsif di berbagai ukuran layar -->
+  
+  <title>Anda Offline</title>
+  <!-- Judul halaman yang akan muncul di tab browser -->
+
+  <style>
+    /* Mengatur gaya keseluruhan halaman */
+    body {
+      margin: 0; /* Menghapus margin default dari browser */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font teks */
+      display: flex; /* Mengaktifkan Flexbox */
+      align-items: center; /* Menyelaraskan vertikal ke tengah */
+      justify-content: center; /* Menyelaraskan horizontal ke tengah */
+      height: 100vh; /* Tinggi 100% dari viewport (tinggi layar) */
+      background: linear-gradient(135deg, #b39ddb, #9575cd); /* Gradasi warna ungu */
+      color: white; /* Warna teks putih */
+      text-align: center; /* Teks rata tengah */
+      padding: 20px; /* Spasi dalam */
+    }
+
+    /* Kontainer utama untuk pesan offline */
+    .offline-container {
+      max-width: 400px; /* Maksimum lebar kontainer */
+    }
+
+    /* Gaya untuk judul */
+    h1 {
+      font-size: 2rem; /* Ukuran font besar */
+      margin-bottom: 0.5rem; /* Jarak bawah dari judul */
+    }
+
+    /* Gaya untuk paragraf penjelasan */
+    p {
+      font-size: 1.1rem; /* Ukuran font paragraf */
+    }
+
+    /* Gaya untuk emoji */
+    .emoji {
+      font-size: 3rem; /* Ukuran besar untuk emoji */
+      margin-bottom: 1rem; /* Jarak bawah emoji */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Kontainer utama untuk isi pesan offline -->
+  <div class="offline-container">
+    <div class="emoji">📴</div>
+    <!-- Judul pesan offline -->
+    <h1>Oops! Anda sedang offline</h1>
+    <p>Koneksi internet tidak tersedia. Silakan sambungkan kembali untuk melanjutkan menggunakan aplikasi ini.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata untuk character encoding dan responsive layout -->
+    <meta charset="utf-8" />
+    <!-- Membuat halaman web responsif agar bisa menyesuaikan tampilan di berbagai ukuran layar, terutama di perangkat mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Link ke CSS Bootstrap -->
+    <!-- Menyediakan semua styling CSS dari Bootstrap -->
+    
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Judul tab browser -->
+    <title>My Portofolio | Della Mamdu Azzahra</title>
+
+    <!-- Favicon atau ikon di tab browser -->
+    <link rel="icon" href="profileku.jpg" />
+
+    <!-- Link ke file CSS buatan sendiri -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="home">
+    
+    <!-- membuat navigasi yang berwarna biru, teks putih, responsif, memiliki bayangan, 
+     dan tetap menempel di bagian atas saat discroll -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow bg-primary fixed-top">
+      <!-- membungkus konten dengan lebar tetap dan memberi padding otomatis di kiri dan kanan 
+       agar tata letak terlihat rapi di berbagai ukuran layar. -->
+      <div class="container">
+        <!-- Nama/brand navbar -->
+        <a class="navbar-brand" href="#">Della Azzahra</a>
+        
+        <!-- menampilkan tombol menu yang dapat menampilkan atau menyembunyikan navigasi pada tampilan mobile. -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <!-- menampilkan hamburger icon di tombol toggle navbar Bootstrap. -->
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- menyembunyikan atau menampilkan menu saat ukuran layar berubah, dan terhubung dengan tombol toggle pada navbar Bootstrap. -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- membuat daftar menu navigasi yang akan tampil di sisi kanan navbar dengan gaya yang sesuai standar Bootstrap. -->
+          <ul class="navbar-nav ms-auto">
+            
+            <!-- membungkus setiap link menu di navbar dan menerapkan gaya Bootstrap agar item-item navigasi tampil rapi dan teratur.-->
+            <li class="nav-item"> 
+              <!-- membuat tautan navigasi dengan gaya Bootstrap yang menandai posisi aktif dan akan otomatis menggulir ke bagian "home" saat diklik -->
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+
+            <!-- membungkus setiap link menu di navbar dan menerapkan gaya Bootstrap agar item-item navigasi tampil rapi dan teratur -->
+            <li class="nav-item"> 
+              <a class="nav-link" href="#about">About</a><!-- membuat tautan navigasi bergaya Bootstrap yang mengarahkan pengguna ke bagian halaman "about". -->
+            </li>
+            <!-- membungkus setiap link menu di navbar dan menerapkan gaya Bootstrap agar item-item navigasi tampil rapi dan teratur -->
+            <li class="nav-item"> 
+              <a class="nav-link" href="#skills">Skill</a><!-- membuat tautan navigasi bergaya Bootstrap yang mengarahkan pengguna ke bagian halaman "skills". -->
+            </li>
+            <!-- membungkus setiap link menu di navbar dan menerapkan gaya Bootstrap agar item-item navigasi tampil rapi dan teratur -->
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a><!-- membuat tautan navigasi bergaya Bootstrap yang mengarahkan pengguna ke bagian halaman "contact". -->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Jumbotron: bagian utama yang menampilkan profil singkat -->
+    <section class="jumbotron text-center">
+      <!-- Foto profil -->
+      <img src="profileku1.jpg" width="350" class="rounded-circle img-thumbnail" alt="Della" />
+      
+      <!-- Nama dan Keahlian -->
+      <h2 class="display-4 mb-2">Della Mamdu Azzahra</h2>
+      <p class="lead">Sistem Informasi Akuntansi</p>
+    
+      <!-- Ikon media sosial -->
+       <!-- Blok kode di atas menampilkan empat ikon media sosial (Instagram, X/Twitter, TikTok, dan YouTube) sebagai tautan eksternal yang membuka di tab baru. 
+        Masing-masing link diberi ikon Font Awesome, berukuran agak besar (fs-4), berwarna gelap (text-dark), dan memiliki jarak ke kanan antar ikon (me-3). 
+        Untuk menjaga tampilan ikon tetap bersih tanpa garis bawah, ditambahkan class text-decoration-none -->
+      <div class="mb-3">
+        <a href="https://www.instagram.com/dellazahraaaa/" target="_blank" class="text-dark fs-4 me-3 text-decoration-none">
+          <i class="fa-brands fa-square-instagram social-icon"></i>
+        </a>
+      
+        <a href="https://x.com/MamduDella/" target="_blank" class="text-dark fs-4 me-3 text-decoration-none">
+          <i class="fa-brands fa-twitter social-icon"></i>
+        </a>
+      
+        <a href="https://www.tiktok.com/@dellazahraaaa" target="_blank" class="text-dark fs-4 me-3 text-decoration-none">
+          <i class="fa-brands fa-tiktok social-icon"></i>
+        </a>
+      
+        <a href="https://www.youtube.com/@dellamamdu" target="_blank" class="text-dark fs-4 me-3 text-decoration-none">
+          <i class="fa-brands fa-youtube social-icon"></i>
+        </a>
+      </div>
+      
+    
+      <!-- SVG sebagai pemisah bentuk gelombang -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ffffff" fill-opacity="1" d="M0,96L48,122.7C96,149,192,203,288,202.7C384,203,480,149,576,106.7C672,64,768,32,864,58.7C960,85,1056,171,1152,186.7C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
+    </section>
+    
+
+    <!-- About Section -->
+     <!-- mengatur tampilan bagian deskripsi tentang diri pengguna dengan desain yang rapi dan responsif -->
+    <section id="about">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col text-center">
+            <h2>About Me</h2>
+          </div>
+        </div>
+        <!-- Deskripsi singkat -->
+        <!-- membuat sebuah baris layout Bootstrap yang teksnya besar dan rata tengah, serta isinya ditempatkan 
+         di tengah layar secara horizontal untuk menampilkan paragraf deskripsi atau informasi penting yang ingin ditonjolkan secara visual. -->
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-md-5">
+            <p>Selamat datang di portofolio profesional saya! Saya Della, seorang akuntan yang berdedikasi dan berorientasi 
+              pada detail dengan latar belakang yang kuat dalam pelaporan keuangan, penganggaran, dan analisis data. Saya
+               memiliki pengalaman menangani berbagai tugas akuntansi untuk individu dan bisnis, dan saya bersemangat 
+               memberikan solusi keuangan yang akurat dan dapat diandalkan.</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- SVG pemisah -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#e2edff" fill-opacity="1" d="M0,96L48,122.7C96,149,192,203,288,202.7C384,203,480,149,576,106.7C672,64,768,32,864,58.7C960,85,1056,171,1152,186.7C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="skills">
+      <div class="container">
+        <!-- Judul section -->
+        <div class="row mb-5">
+          <div class="col text-center">
+            <h2>My Skills</h2>
+          </div>
+        </div>
+
+            <!-- Beberapa Keahlian Penulis -->
+            <div class="row justify-content-center"> <!-- menengahkan kolom-kolom di dalam baris ini secara horizontal. -->
+              <!-- col-md-4 artinya kolom ini akan mengambil 4 dari 12 bagian lebar grid pada layar medium ke atas (tablet dan desktop). -->
+              <!-- mb-3 menambahkan margin bawah (bottom) sebesar 1rem untuk memberi jarak antar elemen secara vertikal. -->
+              <div class="col-md-4 mb-3"> 
+                <!-- shadow menambahkan bayangan di sekitar kartu untuk efek visual yang lebih menarik (terkesan mengambang). -->
+                <!-- -100 memastikan kartu memiliki tinggi penuh sesuai kontainer induknya, agar sejajar jika ada beberapa kartu lain di satu baris. -->
+                <div class="card shadow h-100">
+                  <div class="card-body text-center"> <!-- -100 memastikan kartu memiliki tinggi penuh sesuai kontainer induknya, agar sejajar jika ada beberapa kartu lain di satu baris. -->
+                    <h5 class="card-title">Sistem Informasi Akuntansi</h5>
+                    <p class="card-text">Membuat dan mengembangkan website accounting responsif, modern, dan sesuai kebutuhan klien menggunakan HTML, CSS, JavaScript, dan Bootstrap.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card shadow h-100">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Konsultan SIA</h5>
+                    <p class="card-text">Membantu perusahaan mengimplementasikan software akuntansi/ERP seperti SAP, Oracle, Odoo, Accurate, dan lainnya.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-md-4 mb-3">
+                <div class="card shadow h-100">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Business Analyst</h5>
+                    <p class="card-text">Menganalisis proses bisnis dan merekomendasikan solusi berbasis teknologi dan akuntansi untuk peningkatan kinerja.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card shadow h-100">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">IT Auditor</h5>
+                    <p class="card-text">Menggabungkan keahlian TI dan audit untuk menilai keamanan dan keandalan sistem informasi perusahaan.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card shadow h-100">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Financial Technology</h5>
+                    <p class="card-text">penggunaan teknologi untuk meningkatkan layanan dan produk keuangan, seperti pembayaran digital, pinjaman online, investasi, dompet digital, dan lain-lain.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+      <!-- SVG pemisah -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <!-- <path fill="#ffffff" fill-opacity="1" d="..."></path> -->
+      </svg>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact"> <!-- navigasi cepat ke bagian contact -->
+      <!-- Container Bootstrap yang digunakan untuk memberi padding horizontal dan menjaga konten tetap sejajar secara rapi di tengah halaman. -->
+      <div class="container">
+        <!-- Membuat baris (row) untuk sistem grid Bootstrap, mb-5 memberi margin bawah yang besar (biasanya 3rem) untuk memberi ruang antar elemen -->
+        <div class="row mb-5">
+          <div class="col text-center"> <!-- meratakan semua isi teks ke tengah -->
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+
+        <!-- Form kontak -->
+        <div class="row justify-content-center"> <!-- Mengatur isi baris agar berada di tengah secara horizontal.-->
+          <div class="col-md-6"> <!-- Membuat kolom selebar 6 kolom dari total 12 kolom Bootstrap pada layar medium ke atas.-->
+            <form>
+              <div class="mb-3"> <!--Margin bawah agar ada jarak antar elemen-->
+                <label for="name" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="name" /> <!--Kolom teks biasa untuk memasukkan nama.-->
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" /> <!--Memastikan pengguna memasukkan format email yang benar.-->
+                <div class="form-text">Kami tidak akan pernah membagikan email Anda kepada orang lain.</div> <!--keterangan tambahan atau jaminan privasi.-->
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Pesan</label> 
+                <textarea class="form-control" id="message" rows="3"></textarea> <!--Area teks yang lebih luas untuk memasukkan pesan atau komentar.-->
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button> <!--Tombol untuk mengirimkan form.-->
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- SVG gelombang biru untuk penutup -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#0d6efd" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,208C384,192,480,160,576,170.7C672,181,768,235,864,245.3C960,256,1056,224,1152,202.7C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
+    </section>
+
+    <!-- bg-primary: Memberi latar belakang biru (warna utama Bootstrap).-->
+    <!-- text-white: Warna teks menjadi putih agar kontras dengan latar belakang.-->
+    <!-- text-center: Menyelaraskan teks ke tengah. -->
+     <!-- Memberi padding bawah sebesar 1 rem (jarak antara isi dan tepi bawah).-->
+    <footer class="bg-primary text-white text-center pb-3">
+      <p>Created by <a href="#" class="text-white fw-bold">Della Mamdu Azzahra</a></p>
+    </footer>
+
+    <!-- Script tambahan untuk jQuery dan Tether (tidak wajib di Bootstrap 5) -->
+    <!-- Script pertama memuat jQuery 2.1.1 agar bisa memakai fungsi-fungsi JavaScript yang lebih mudah dan ringkas. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Script kedua memuat Tether 1.2.4, yang pada masa awal Bootstrap 4 digunakan untuk menangani penempatan elemen dinamis, seperti dropdown dan tooltip. -->
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+
+    <!-- Script untuk menambahkan efek "active" pada navbar saat diklik -->
+    <script>
+      // Fungsi ini memastikan bahwa kode di dalamnya baru dijalankan setelah seluruh halaman (DOM) selesai dimuat oleh browser.
+      $(document).ready(function () {
+        // Menyeleksi semua elemen <a> yang ada di dalam <li> dalam <ul> dengan class navbar-nav.
+        // Kemudian, menambahkan event klik pada link tersebut yang artinya Saat salah satu link di navbar diklik, maka fungsi di dalam akan dijalankan.
+          $('ul.navbar-nav > li > a').click(function () {
+        // Menghapus class active dari semua link navigasi, ni dilakukan supaya hanya satu link saja yang aktif setiap kali ada yang diklik.
+          $('ul.navbar-nav > li > a').removeClass('active');
+        // Menambahkan class active hanya pada elemen <a> yang sedang diklik (yaitu this).
+        // Ini memberi efek visual (misalnya warna berbeda) yang menandakan bahwa link itu sedang aktif/dipilih.
+          $(this).addClass('active');
+        });
+      });
+    </script>
+<script src="app.js"></script>
+  </body>
+</html>
