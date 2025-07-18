@@ -2,15 +2,17 @@
 const CURRENT_CACHE = 'portofolio-DellaPWA';
 
 //  Daftar aset inti (core assets) yang akan disimpan saat instalasi
+const BASE_PATH = '/Portofolio-Mamdu';
+
 const CORE_ASSETS = [
-  '/index.html',
-  '/style.css',
-  '/app.js',
-  '/profileku.jpg',
-  '/profileku1.jpg',
-  '/offline.html',
-  '/screenshot-desktop.png',
-  '/screenshot-mobile.png'
+  `${BASE_PATH}/index.html`,
+  `${BASE_PATH}/style.css`,
+  `${BASE_PATH}/app.js`,
+  `${BASE_PATH}/profileku.jpg`,
+  `${BASE_PATH}/profileku1.jpg`,
+  `${BASE_PATH}/offline.html`,
+  `${BASE_PATH}/screenshot-desktop.png`,
+  `${BASE_PATH}/screenshot-mobile.png`
 ];
 
 // 🔧 Event INSTALL: Dilakukan saat pertama kali service worker dipasang
@@ -48,7 +50,7 @@ self.addEventListener('fetch', event => {
         })
         .catch(() => {
           console.warn('[SW] ⚠️ Gagal dari jaringan. Menampilkan fallback offline.');
-          return caches.match('/offline.html'); // Fallback jika offline
+          return caches.match(`${BASE_PATH}/offline.html`); // Fallback jika offline
         })
     );
     return;
